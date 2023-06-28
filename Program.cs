@@ -7,10 +7,8 @@ namespace HW3_Module3
     {
         public static void Main(string[] args)
         {
-            MyDelegateShow show = Show;
-            MyDelegatePow pow = Class1.Pow;
-            var v = Class2.Calc(pow, 10, 5);
-            show(v(2));
+            Class2.Calc(Pow, 2, 2);
+            Class1.Show(Class2.ResultD(3));
         }
 
         public static void Show(bool x)
